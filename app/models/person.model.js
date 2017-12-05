@@ -2,10 +2,12 @@ var mongoose = require('mongoose');
 
 var PersonSchema = mongoose.Schema({
 	name: String,
-	minutes: Integer,
-	amount: Double,
-	mobileNo:Integer,
-	remarks:String
+	minutes: Number,
+	amount: Number,
+	mobileNo:Number,
+	remarks:String,
+	status:Boolean,
+	PaidAmt:Number,
 }, {
 	timestamps: true
 });

@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({
 // parse requests of content-type - application/json
 app.use(bodyParser.json())
 
-require('./app/routes/note.routes.js')(app);
+require('./app/routes/routes.js')(app);
 // define a simple route
 app.get('/', function (req, res) {
 	res.json({

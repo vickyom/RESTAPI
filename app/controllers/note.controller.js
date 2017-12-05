@@ -32,9 +32,7 @@ exports.create = function (req, res) {
 		}
 	});
 };
-client.get('framework', function (err, reply) {
-	console.log(reply);
-});
+
 exports.findAll = function (req, res) {
 	// Retrieve and return all notes from the database.
 	Note.find(function (err, notes) {
@@ -69,7 +67,7 @@ exports.update = function (req, res) {
 				message: "Could not find a note with id " + req.params.noteId
 			});
 		}
-
+console.log(note);
 		note.title = req.body.title;
 		note.content = req.body.content;
 
