@@ -31,7 +31,7 @@ require('./app/routes/routes.js')(app);
 // define a simple route
 app.get('/', function (req, res) {
 	res.json({
-		"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."
+		"message": "Welcome to My application."
 	});
 });
 
